@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', () => {
         '5.jpg',
         '20.jpg',
         '22.jpg',
-        '4.JPG',
+        '4.jpg',
         '23.jpg',
         '11.jpg',
         '3.jpg',
@@ -43,21 +43,23 @@ document.addEventListener('DOMContentLoaded', () => {
         '6.jpg',
         '26.jpg'
       ];
+
       const proposalImages = [
-        '13.jpg',
-    '25.jpg',
-    '21.jpg',
-    '5.jpg',
-    '20.jpg',
-    '22.jpg',
-    '4.JPG',
-    '23.jpg',
-    '11.jpg',
-    '3.jpg',
-    '1.jpg',
-    '18.jpg',
-    '6.jpg',
-    '26.jpg'
+        '30.jpg',
+        '31.jpg',
+        '32.jpg',
+        '33.jpg',
+        '34.jpg',
+        '35.jpg',
+        '36.jpg',
+        '37.jpg',
+        '38.jpg',
+        '39.jpg',
+        '40.jpg',
+        '41.jpg',
+        '42.jpg',
+        '43.jpg',
+        '44.jpg'
       ];
       
       const leftImg = journeyImages[Math.floor(Math.random() * journeyImages.length)];
@@ -139,21 +141,21 @@ document.addEventListener('DOMContentLoaded', () => {
   ];
 
   const PROPOSAL_FILES = [
-    'IMG00 10.JPG',
-    'IMG00 11.JPG',
-    'IMG00 12.JPG',
-    'IMG00 15.JPG',
-    'IMG00 18.JPG',
-    'IMG00 23.JPG',
-    'IMG00 24.JPG',
-    'IMG00 25.JPG',
-    'IMG00 29.JPG',
-    'IMG00 35.JPG',
-    'IMG00 37.JPG',
-    'IMG00 41.JPG',
-    'IMG00 46.JPG',
-    'IMG00 47.JPG',
-    'IMG00 7.JPG'
+    '30.jpg',
+    '31.jpg',
+    '32.jpg',
+    '33.jpg',
+    '34.jpg',
+    '35.jpg',
+    '36.jpg',
+    '37.jpg',
+    '38.jpg',
+    '39.jpg',
+    '40.jpg',
+    '41.jpg',
+    '42.jpg',
+    '43.jpg',
+    '44.jpg'
   ];
 
   const COURT_WEDDING_FILES = [
