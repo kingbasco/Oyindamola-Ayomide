@@ -170,12 +170,12 @@ document.addEventListener('DOMContentLoaded', () => {
   ];
 
   const COURT_WEDDING_FILES = [
-    'WhatsApp Image 2026-05-28 at 9.15.55 AM.jpeg',
-    'WhatsApp Image 2026-05-28 at 9.15.56 AM.jpeg',
-    'WhatsApp Image 2026-05-28 at 9.15.59 AM.jpeg',
-    'WhatsApp Image 2026-05-28 at 9.15.59 AM (1).jpeg',
-    'WhatsApp Image 2026-05-28 at 9.15.59 AM (2).jpeg',
-    'WhatsApp Image 2026-05-28 at 9.16.01 AM.jpeg'
+    '60.jpg',
+    '61.jpg',
+    '62.jpg',
+    '63.jpg',
+    '64.jpg',
+    '65.jpg'
   ];
 
   const encodeAsset = (folder, file) => encodeURI(`pictures/${folder}/${file}`);
