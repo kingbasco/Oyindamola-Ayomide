@@ -106,20 +106,20 @@ document.addEventListener('DOMContentLoaded', () => {
   --------------------------------------------------------- */
   const PARTY_DATA = {
     bridesmaids: [
-      { file: 'Adelekun Roseline.jpeg', name: 'Adelekun Roseline', role: 'Bridesmaid' },
-      { file: 'Adeyeye Peace.jpeg', name: 'Adeyeye Peace', role: 'Bridesmaid' },
-      { file: 'Akinojo Motunrayo Chief Bridesmaid.jpeg', name: 'Akinojo Motunrayo', role: 'Chief Bridesmaid' },
-      { file: 'Ayodele Eunice.jpeg', name: 'Ayodele Eunice', role: 'Bridesmaid' },
-      { file: 'Familua Oluwadamilola.jpeg', name: 'Familua Oluwadamilola', role: 'Bridesmaid' },
-      { file: 'Mayowa Adewale.jpeg', name: 'Mayowa Adewale', role: 'Bridesmaid' },
-      { file: 'Tommy Catherine.jpeg', name: 'Tommy Catherine', role: 'Bridesmaid' }
+      { file: 'Adelekun Roseline.jpeg', name: 'Name Name', role: 'Bridesmaid' },
+      { file: 'Adeyeye Peace.jpeg', name: 'Name Name', role: 'Bridesmaid' },
+      { file: 'Akinojo Motunrayo Chief Bridesmaid.jpeg', name: 'Name Name', role: 'Chief Bridesmaid' },
+      { file: 'Ayodele Eunice.jpeg', name: 'Name Name', role: 'Bridesmaid' },
+      { file: 'Familua Oluwadamilola.jpeg', name: 'Name Name', role: 'Bridesmaid' },
+      { file: 'Mayowa Adewale.jpeg', name: 'Name Name', role: 'Bridesmaid' },
+      { file: 'Tommy Catherine.jpeg', name: 'Name Name', role: 'Bridesmaid' }
     ],
     groomsmen: [
-      { file: 'Agboola Sola.jpeg', name: 'Agboola Sola', role: 'Groomsman' },
-      { file: 'Ayomide Ogunmola.jpeg', name: 'Ayomide Ogunmola', role: 'Groomsman' },
-      { file: 'Idowu Oladimeji.jpeg', name: 'Idowu Oladimeji', role: 'Groomsman' },
-      { file: 'Kehinde Olatunde.jpeg', name: 'Kehinde Olatunde', role: 'Groomsman' },
-      { file: 'Oluwatoba Dada.jpeg', name: 'Oluwatoba Dada', role: 'Groomsman' }
+      { file: 'Agboola Sola.jpeg', name: 'Name Name', role: 'Groomsman' },
+      { file: 'Ayomide Ogunmola.jpeg', name: 'Name Name', role: 'Groomsman' },
+      { file: 'Idowu Oladimeji.jpeg', name: 'Name Name', role: 'Groomsman' },
+      { file: 'Kehinde Olatunde.jpeg', name: 'Name Name', role: 'Groomsman' },
+      { file: 'Oluwatoba Dada.jpeg', name: 'Name Name', role: 'Groomsman' }
     ]
   };
 
@@ -156,6 +156,17 @@ document.addEventListener('DOMContentLoaded', () => {
     '42.jpg',
     '43.jpg',
     '44.jpg'
+  ];
+
+  const INTRODUCTION_FILES = [
+    '51.jpg',
+    '52.jpg',
+    '53.jpg',
+    '54.jpg',
+    '55.jpg',
+    '56.jpg',
+    '57.jpg',
+    '58.jpg'
   ];
 
   const COURT_WEDDING_FILES = [
@@ -293,6 +304,11 @@ document.addEventListener('DOMContentLoaded', () => {
     renderMasonryGrid(proposalGrid, 'proposal', PROPOSAL_FILES, 'proposal');
   };
 
+  const renderIntroduction = () => {
+    const introductionGrid = document.getElementById('introductionGrid');
+    renderMasonryGrid(introductionGrid, 'introduction', INTRODUCTION_FILES, 'introduction');
+  };
+
   const renderCourtWedding = () => {
     const courtWeddingGrid = document.getElementById('courtWeddingGrid');
     renderMasonryGrid(courtWeddingGrid, 'court wedding', COURT_WEDDING_FILES, 'court wedding');
@@ -300,6 +316,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   renderPartyCards();
   renderJourney();
+  renderIntroduction();
   renderProposal();
   renderCourtWedding();
 
@@ -325,6 +342,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // Map of file arrays for each gallery
   const galleryFileMap = {
     'journey': JOURNEY_FILES,
+    'introduction': INTRODUCTION_FILES,
     'proposal': PROPOSAL_FILES,
     'court wedding': COURT_WEDDING_FILES,
     'bridesmaids': PARTY_DATA.bridesmaids.map(p => p.file),

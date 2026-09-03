@@ -1362,6 +1362,21 @@ a { text-decoration: none; color: inherit; }
   aspect-ratio: 1 / 1.35;
 }
 
+#introduction .media-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+#introduction .media-card {
+  aspect-ratio: 1 / 1.15;
+  border-color: rgba(245, 240, 232, 0.18);
+  background: rgba(245, 240, 232, 0.06);
+  box-shadow: 0 18px 36px rgba(0, 0, 0, 0.25);
+}
+
+#introduction .media-card--tall {
+  aspect-ratio: 1 / 1.35;
+}
+
 #court-wedding .media-grid {
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
@@ -1382,6 +1397,7 @@ a { text-decoration: none; color: inherit; }
 
   .party-grid,
   .gifts-grid,
+  #introduction .media-grid,
   #proposal .media-grid,
   #court-wedding .media-grid {
     grid-template-columns: 1fr 1fr;
@@ -1392,6 +1408,7 @@ a { text-decoration: none; color: inherit; }
   .party-grid,
   .gifts-grid,
   .media-grid,
+  #introduction .media-grid,
   #proposal .media-grid,
   #court-wedding .media-grid {
     grid-template-columns: 1fr;
