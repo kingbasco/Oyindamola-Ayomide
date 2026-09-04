@@ -503,7 +503,7 @@ document.addEventListener('DOMContentLoaded', () => {
   /* ---------------------------------------------------------
      5. COUNTDOWN TIMER
   --------------------------------------------------------- */
-  const weddingDate = new Date('2026-06-26T09:00:00');
+  const weddingDate = new Date('2026-11-21T09:00:00');
 
   function updateCountdown() {
     const daysEl = document.getElementById('cd-days');
